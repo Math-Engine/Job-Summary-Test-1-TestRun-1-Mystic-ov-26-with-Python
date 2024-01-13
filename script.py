@@ -57,7 +57,7 @@ os.system(f'git config user.name "github-actions[bot]"')
 os.system(f'git config user.email "github-actions[bot]@users.noreply.github.com"')
 os.system(f'git add .')
 
-os.system(f'echo "a = <code>{start_max_a}</code> ~ <code>{max_json["a"]</code><br> b = <code>{start_max_b}</code> ~ <code>{max_json["b"]</code><br> c = <code>{start_max_c}</code> ~ <code>{max_json["c"]</code><br> d = <code>{start_max_d}</code> ~ <code>{max_json["d"]</code>" >> $GITHUB_STEP_SUMMARY')
+os.system(f'echo "a = <code>{start_max_a}</code> => <code>{max_json['a']}</code><br> b = <code>{start_max_b}</code> => <code>{max_json['b']}</code><br> c = <code>{start_max_c}</code> => <code>{max_json['c']}</code><br> d = <code>{start_max_d}</code> => <code>{max_json['d']}</code>" >> $GITHUB_STEP_SUMMARY')
 
 if number_of_changes_to_result == 0:
     commit_message = f"({start_max_a}, {start_max_b}, {start_max_c}, {start_max_d}) ~ ({max_json["a"]}, {max_json["b"]}, {max_json["c"]}, {max_json["d"]}) [{param ** 4}] 까지 확인한 결과, 해가 없음"
