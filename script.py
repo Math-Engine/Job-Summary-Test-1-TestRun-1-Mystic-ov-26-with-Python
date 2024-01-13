@@ -26,6 +26,8 @@ start_max_c = max_json['c']
 max_json['d'] = int(max_json['d']) + 1
 start_max_d = max_json['d']
 
+os.system(f'echo "a = <code>{start_max_a}</code><br> b = <code>{start_max_b}</code><br> c = <code>{start_max_c}</code><br> d = <code>{start_max_d}</code>" >> $GITHUB_STEP_SUMMARY')
+
 number_of_changes_to_result = 0
 
 for a in range(int(max_json['a']), int(max_json['a']) + param):
